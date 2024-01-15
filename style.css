@@ -103,7 +103,7 @@ p {
     right: -5px;
     bottom: -5px;
     border: 2px solid #00ffcc;
-    border-radius: 15px; /* Adjust based on your preference */
+    border-radius: 200px; /* Adjust based on your preference */
     opacity: 0;
     animation: neonGlow 1.5s infinite alternate;
 }
