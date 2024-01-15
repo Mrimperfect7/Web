@@ -1,35 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>Loki ser</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="./style.css">
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="Idk" />
+    <meta property="og:description" content="My profile" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>DURGA MD</title>
+    <title></title>
+
+    <style>
+        .profile-card {
+            border: 1px solid #ffffff22;
+            background-color: #282c34;
+            background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+            box-shadow: 0 7px 20px 5px #00000088;
+            border-radius: 0.7rem;
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            overflow: hidden;
+            transition: 0.5s all;
+        }
+
+        .profile-img {
+            border-radius: 0.5rem;
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .text-color {
+            color: #a89ec9
+        }
+
+        .profile-card ::before {
+            position: fixed;
+            content: "";
+            box-shadow: 0 0 100px 40px #ffffff08;
+            top: -10%;
+            left: -100%;
+            transform: rotate(-45deg);
+            height: 60rem;
+            transition: 0.7s all;
+        }
+
+        .profile-card:hover {
+            border: 1px solid #ffffff44;
+            box-shadow: 0 7px 50px 10px #000000aa;
+            transform: scale(1.015);
+            filter: brightness(1.3);
+        }
+
+        .profile-card:hover ::before {
+            filter: brightness(0.5);
+            top: -100%;
+            left: 200%;
+        }
+
+        .img-margin{
+            margin-top: 2rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+        .text-margin{
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+    </style>
+
 </head>
+
 <body>
-    <div class="container">
-        <div class="drawer" id="drawer1">
-            <h2>Home</h2>
-            <p>Welcome to our website. Here's a brief explanation about us...THIS IS MULTIPLICATIONAL WHATSAPP BOT CREATED BY AMEEN SER AND IMPU SER</p>
+    <header class="p-3 text-bg-dark w-100">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
+                <li><a href="https://wa.me/918848377746?text=hy%CA%9C%C6%B4+%F0%9F%97%A3%EF%B8%8F"
+                        class="nav-link px-2 text-white">Contact</a></li>
+                <li><a href="./scan.html" class="nav-link px-2 text-secondary" target="_blank">About</a></li>
+            </ul>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">DURGA MD</button>
+            </div>
         </div>
-        <div class="drawer" id="drawer2">
-            <h2>Scan QR Code</h2>
-            <p>Use your device to scan the QR code below.</p>
-              <a class="neon-button" href="https://qr-ameen-a3b82b9f1794.herokuapp.com/">SCAN</a>
-            <p>Click to fork the repo</p>
-             <a class="neon-button" href="https://github.com/AmeenRepo/DURGA-MD/fork">FORK</a>
-            <!-- Add QR code image or integration here -->
-        </div>
-        <div class="drawer" id="drawer3">
-            <h2>Contact Owners</h2>
-            <p>Feel free to reach out to us for any inquiries.</p>
-            <a class="neon-button" href="https://wa.me/916238768108?text=_🪀Hᴇʏ+Aᴍᴇᴇɴ+Sᴇʀ🪄_">HELP</a>
-  <a class="neon-button" href="https://wa.me/918848377746?text=_🪀𝛪𝛭𝛲𝑈+𝑆𝛯𝑅🪄_">HELP</a>
-            <!-- Add contact information here -->
-        </div>
-        <div class="content">
-            <p>HEY 👋 EVERYONE </p>
-            <!-- Main content goes here -->
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-xs-1"></div>
+            <div class="col-md-6 col-xs-10">
+                <div class="col-md-3 col-xs-12"></div>
+                <div class="col-md-5 offset-md-3 col-xs-12">
+                    <div class="card mt-5 profile-card">
+                        <!-- <div class=""> -->
+                            <img class='profile-img rounded img-margin' src="https://i.imgur.com/lRpgCDv.jpeg" alt="" />
+                        <!-- </div> -->
+                        <div class="card-body text-color">
+                            <div class="card-title text-margin" style="color: #fff;"><h2>HY EVERYONE</h2></div>
+                            <div class="card-text text-margin">
+                                Welcome to our website. Here's a brief explanation about us...THIS IS MULTIPLICATIONAL WHATSAPP BOT CREATED BY AMEEN SER AND IMPU SER
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12"></div>
+            </div>
+            <div class="col-md-3 col-xs-1"></div>
         </div>
     </div>
     <script src="scripts.js"></script>
