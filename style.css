@@ -66,7 +66,7 @@ p {
       background: rgba(25, 270, 25, 0.3);
       animation: neonAnimation 2s linear infinite;
     }
-/* Text Animation */
+
 .text-animation {
     display: inline-block;
     animation: slideInText 2s ease-in-out infinite;
@@ -83,5 +83,36 @@ p {
     100% {
         transform: translateY(-20px);
         opacity: 0;
+    }
+}
+.neon-border-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.neon-border-box::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #00ffcc;
+    border-radius: 15px; /* Adjust based on your preference */
+    opacity: 0;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes neonGlow {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
     }
 }
