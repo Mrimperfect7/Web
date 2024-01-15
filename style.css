@@ -66,3 +66,22 @@ p {
       background: rgba(25, 270, 25, 0.3);
       animation: neonAnimation 2s linear infinite;
     }
+/* Text Animation */
+.text-animation {
+    display: inline-block;
+    animation: slideInText 2s ease-in-out infinite;
+}
+
+@keyframes slideInText {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
