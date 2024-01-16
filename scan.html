@@ -21,11 +21,27 @@
       font-size: 125%;
     }
 
-    p {
-      color: white;
-      font-family: Arial;
-      font-size: 130%;
-    }
+   p {
+    font-size: 16px;
+    color: #fff; 
+    position: relative;
+}
+
+p::after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: #00ffcc; 
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+p:hover::after {
+    opacity: 1;
+}
   </style>
 </head>
 
@@ -74,31 +90,10 @@
         <p class="text-animation"><b>FOR HELP AND ASSISTANCE OR ANY OTHER ENQUIRIES CLICK BELOW</b></p>
   <a class="rgb-text-animation" href="https://wa.me/916238768108?text=_🪀Hᴇʏ+Aᴍᴇᴇɴ+Sᴇʀ🪄_">HELP</a>
   <a class="rgb-text-animation" href="https://wa.me/918848377746?text=_🪀𝛪𝛭𝛲𝑈+𝑆𝛯𝑅🪄_">ASSISTANCE</a>
-        <style>
+        
     
-p {
-    font-size: 16px;
-    color: #fff; 
-    position: relative;
-}
 
-p::after {
-    content: attr(data-text); 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    color: #00ffcc; 
-    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-p:hover::after {
-    opacity: 1;
-}
-          
-</style>
+       
 
 <p data-text="THANKS FOR CHOOSING US">THANKS FOR CHOOSING US</p>
         
