@@ -156,5 +156,21 @@ p {
     100% {
         filter: hue-rotate(360deg);
     }
+
+p {
+    font-size: 16px;
+    animation: fadeInText 1s ease-in-out forwards;
 }
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
