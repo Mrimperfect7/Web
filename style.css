@@ -134,4 +134,27 @@ p {
     100% {
         background-position: 100% 50%;
     }
+}
+.colorful-text::before {
+    content: attr(data-text); 
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    color: transparent;
+}
+
+.colorful-text::before span {
+    display: inline-block;
+    color: hsl(0, 100%, 50%); 
+    animation: changeColor 5s infinite linear;
+}
+
+@keyframes changeColor {
+    0% {
+        filter: hue-rotate(0deg);
     }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
